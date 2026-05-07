@@ -1,7 +1,8 @@
 import sys
 
 class MU05PainRegulation:
-    def __init__(self, mc02_instance=None, initial_tolerance=0.2, max_tolerance=0.7, critical_threshold=0.9):
+    # 🎯 將預設耐受度對齊為 0.4，最高耐受度拉高至 0.85
+    def __init__(self, mc02_instance=None, initial_tolerance=0.4, max_tolerance=0.85, critical_threshold=0.9):
         """
         初始化痛覺調節層 (隔離測試相容版)
         :param mc02_instance: 傳入已實體化的 MC-02 實例。若為 None，則進入隔離測試模式。
